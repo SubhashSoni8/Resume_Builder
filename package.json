@@ -1,11 +1,15 @@
 {
+  "homepage": "https://SubhashSoni8.github.io/Resume_Builder",
   "name": "react_resume",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node index.js",
     "server": "nodemon index.js",
+    "build": "react-scripts build",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
